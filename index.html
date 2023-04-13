@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="formStyles.css">
+  <title>React</title>
 </head>
+
 <body>
-    <div>
+
+  <header>
+    <h1>Food Supply Chain</h1>
+  </header>
+  <main class="main">
+    <div class="illustration"></div>
+    <div class="form-container">
+      <h2 style="color: #0F6B5C;">Add Food</h2>
+      <form action="">
+        <div class="form-control">
+          <label htmlFor="foodName">Food Name:</label>
+          <input type="text" id="foodName" required />
+        </div>
+        <div class="form-control">
+          <label htmlFor="foodOrigin">Food Origin:</label>
+          <input type="text" id="foodOrigin"  required />
+        </div>
+        <div class="form-control">
+          <label htmlFor="foodQuantity">Food Quantity:</label>
+          <input type="number" id="foodQuantity"  required />
+        </div>
+        <button type="submit" class="button">Add</button>
+      </form>
+    </div>
+  </main>
+
+
+  <!-- <div>
         <h1>Food Supply Chain</h1>
         
           <div>
@@ -22,9 +52,9 @@
               <button type="submit">Add</button>
             </form>
             <h2>Food List</h2>
-            <!-- <table> -->
+             <table> 
               
-                <!-- <tbody>
+                 <tbody>
                 
                   <tr >
                     <td>food.id</td>
@@ -44,11 +74,12 @@
                   </tr>
                 ))}
               </tbody> -->
-            <!-- </table> -->
-          <!-- </div>
+  <!-- </table> -->
+  <!-- </div>
           :
-          <div> -->
+          <div> 
             <p>Loading...</p>
-          </div>
+          </div> -->
 </body>
+
 </html>
